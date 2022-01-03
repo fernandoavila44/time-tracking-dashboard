@@ -1,0 +1,36 @@
+@mixin color-activity ($bg-color, $bg-img) {
+    background-color: $bg-color;
+    background-image: $bg-img;
+    background-size: 4.3rem;
+    background-repeat: no-repeat;
+    background-position: top -0.625rem right 1rem;
+    margin-top: 2rem;
+    position: relative;
+    height: 9rem;
+    
+}
+
+@mixin items-report-div {
+    background-color: $neutral-dark-blue;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 80%;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 0 1.3rem;
+}
+
+@mixin transition-color{
+    background-color: $neutral-desaturated-blue;
+    transition: all 0.5s;
+}
+
+
+@mixin fix-divs {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

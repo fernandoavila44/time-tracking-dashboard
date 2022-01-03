@@ -1,0 +1,110 @@
+@import "fonts";
+@import "variables";
+@import "mixings";
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Generals styles for headings, paragraphs and cursor pointer ellipsis img */
+h2{
+    font-size: 1.125rem; //18px
+    color: $neutral-white;
+    font-weight: 400;
+}
+
+h3{
+    color: $neutral-white;
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+p{
+    color: $neutral-pale-Blue;
+    font-size: 0.875rem;
+}
+
+
+.items-report{
+    img{
+        cursor: pointer;
+    }
+}
+
+body{
+    font-family: 'Rubik', sans-serif;
+
+    main{
+        
+        background-color: $neutral-very-dark-blue; 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+        section{
+            
+            width: 90%;
+            margin: 4rem 0;
+        
+            
+            article{
+                border-radius: $general-border-radius;
+            }
+
+            #user-info{
+
+                background-color: $neutral-dark-blue;
+
+                &>div{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-evenly;
+                }
+                .avatar-text{
+                    background-color: $primary-blue;
+                    border-radius: $general-border-radius;
+                    padding: 1.5rem 0;
+                    img{
+                        width: 4rem;
+                        border: 2px solid $neutral-white;
+                        border-radius: 50%;
+                    }
+                    div{
+                        color: $neutral-white;
+                        small{
+                            font-weight: 300;
+                        }
+                        h1{
+                            font-weight: 400;
+                        }
+                    }
+                }
+                .timeframes{
+                    padding: 1rem 0;
+                    a{
+                        color: $neutral-desaturated-blue;
+                        cursor: pointer;
+                        font-weight: 400;
+                        text-decoration: none;
+                        &:hover, &:active{
+                            color: $neutral-white;
+                            transition: all 0.5s;
+                        }
+                    }
+                }
+                
+            }
+
+            /*importing articles styles from _articles-style.scss partial file*/
+            @import "articles-style";
+            
+        }
+    }
+}
+
+/*importing media queries at this point to apply styles and solve specificity issues*/
+@import "media";
+
+

@@ -1,0 +1,565 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* Generals styles for headings, paragraphs and cursor pointer ellipsis img */
+h2 {
+  font-size: 1.125rem;
+  color: white;
+  font-weight: 400;
+}
+
+h3 {
+  color: white;
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+p {
+  color: #bdc1ff;
+  font-size: 0.875rem;
+}
+
+.items-report img {
+  cursor: pointer;
+}
+
+body {
+  font-family: 'Rubik', sans-serif;
+}
+
+body main {
+  background-color: #0f1424;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body main section {
+  width: 90%;
+  margin: 4rem 0;
+  /*importing articles styles from _articles-style.scss partial file*/
+}
+
+body main section article {
+  border-radius: 1rem;
+}
+
+body main section #user-info {
+  background-color: #1c1f4a;
+}
+
+body main section #user-info > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+body main section #user-info .avatar-text {
+  background-color: #5847eb;
+  border-radius: 1rem;
+  padding: 1.5rem 0;
+}
+
+body main section #user-info .avatar-text img {
+  width: 4rem;
+  border: 2px solid white;
+  border-radius: 50%;
+}
+
+body main section #user-info .avatar-text div {
+  color: white;
+}
+
+body main section #user-info .avatar-text div small {
+  font-weight: 300;
+}
+
+body main section #user-info .avatar-text div h1 {
+  font-weight: 400;
+}
+
+body main section #user-info .timeframes {
+  padding: 1rem 0;
+}
+
+body main section #user-info .timeframes a {
+  color: #6f76c8;
+  cursor: pointer;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+body main section #user-info .timeframes a:hover, body main section #user-info .timeframes a:active {
+  color: white;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+body main section #work {
+  background-color: #ff8c66;
+  background-image: url(../images/icon-work.svg);
+  background-size: 4.3rem;
+  background-repeat: no-repeat;
+  background-position: top -0.625rem right 1rem;
+  margin-top: 2rem;
+  position: relative;
+  height: 9rem;
+}
+
+body main section #work > div {
+  background-color: #1c1f4a;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 80%;
+  border-radius: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 0 1.3rem;
+}
+
+body main section #work > div:hover {
+  background-color: #6f76c8;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+body main section #work > div div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body main section #play {
+  background-color: #56c2e6;
+  background-image: url(../images/icon-play.svg);
+  background-size: 4.3rem;
+  background-repeat: no-repeat;
+  background-position: top -0.625rem right 1rem;
+  margin-top: 2rem;
+  position: relative;
+  height: 9rem;
+}
+
+body main section #play > div {
+  background-color: #1c1f4a;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 80%;
+  border-radius: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 0 1.3rem;
+}
+
+body main section #play > div:hover {
+  background-color: #6f76c8;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+body main section #play > div div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body main section #study {
+  background-color: #ff5c7c;
+  background-image: url(../images/icon-study.svg);
+  background-size: 4.3rem;
+  background-repeat: no-repeat;
+  background-position: top -0.625rem right 1rem;
+  margin-top: 2rem;
+  position: relative;
+  height: 9rem;
+}
+
+body main section #study > div {
+  background-color: #1c1f4a;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 80%;
+  border-radius: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 0 1.3rem;
+}
+
+body main section #study > div:hover {
+  background-color: #6f76c8;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+body main section #study > div div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body main section #exercise {
+  background-color: #4acf81;
+  background-image: url(../images/icon-exercise.svg);
+  background-size: 4.3rem;
+  background-repeat: no-repeat;
+  background-position: top -0.625rem right 1rem;
+  margin-top: 2rem;
+  position: relative;
+  height: 9rem;
+}
+
+body main section #exercise > div {
+  background-color: #1c1f4a;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 80%;
+  border-radius: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 0 1.3rem;
+}
+
+body main section #exercise > div:hover {
+  background-color: #6f76c8;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+body main section #exercise > div div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body main section #social {
+  background-color: #7536d3;
+  background-image: url(../images/icon-social.svg);
+  background-size: 4.3rem;
+  background-repeat: no-repeat;
+  background-position: top -0.625rem right 1rem;
+  margin-top: 2rem;
+  position: relative;
+  height: 9rem;
+}
+
+body main section #social > div {
+  background-color: #1c1f4a;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 80%;
+  border-radius: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 0 1.3rem;
+}
+
+body main section #social > div:hover {
+  background-color: #6f76c8;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+body main section #social > div div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body main section #self-care {
+  background-color: #f1c65b;
+  background-image: url(../images/icon-self-care.svg);
+  background-size: 4.3rem;
+  background-repeat: no-repeat;
+  background-position: top -0.625rem right 1rem;
+  margin-top: 2rem;
+  position: relative;
+  height: 9rem;
+}
+
+body main section #self-care > div {
+  background-color: #1c1f4a;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 80%;
+  border-radius: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 0 1.3rem;
+}
+
+body main section #self-care > div:hover {
+  background-color: #6f76c8;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+body main section #self-care > div div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body main section #prueba {
+  background-color: #f1c65b;
+  background-image: url(../images/icon-self-care.svg);
+  background-size: 4.3rem;
+  background-repeat: no-repeat;
+  background-position: top -0.625rem right 1rem;
+  margin-top: 2rem;
+  position: relative;
+  height: 9rem;
+}
+
+body main section #prueba > div {
+  background-color: #1c1f4a;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 80%;
+  border-radius: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 0 1.3rem;
+}
+
+body main section #prueba > div:hover {
+  background-color: #6f76c8;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+body main section #prueba > div div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/*importing media queries at this point to apply styles and solve specificity issues*/
+@media (min-width: 641px) and (max-width: 1007px) {
+  h3 {
+    font-size: 2.5rem;
+    margin-bottom: 0.6rem;
+  }
+  body main {
+    height: 100vh;
+  }
+  body main section {
+    display: -ms-grid;
+    display: grid;
+    gap: 1.5rem;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+        grid-template-areas: "control control";
+    margin: 0;
+  }
+  body main section #user-info {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: control;
+    margin: 0;
+  }
+  body main section #work, body main section #play, body main section #study, body main section #exercise, body main section #social, body main section #self-care {
+    margin: 0;
+  }
+  body main section #work div > :last-child, body main section #play div > :last-child, body main section #study div > :last-child, body main section #exercise div > :last-child, body main section #social div > :last-child, body main section #self-care div > :last-child {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+
+@media (min-width: 1008px) {
+  h3 {
+    font-size: 3rem;
+    margin-bottom: 0.6rem;
+  }
+  body main {
+    height: 100vh;
+  }
+  body main section {
+    display: -ms-grid;
+    display: grid;
+    gap: 1.5rem;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    -ms-grid-rows: auto auto;
+        grid-template-rows: auto auto;
+        grid-template-areas: "control" "control";
+    height: 55%;
+    margin: 0;
+  }
+  body main section #user-info {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 1;
+    grid-area: control;
+  }
+  body main section #user-info div {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body main section #user-info .avatar-text {
+    padding: 1rem 1.5rem 3rem;
+    height: 70%;
+  }
+  body main section #user-info .avatar-text img {
+    width: 30%;
+  }
+  body main section #user-info .avatar-text h1 {
+    font-size: 3rem;
+  }
+  body main section #user-info .timeframes {
+    padding: 1rem 1.5rem;
+    height: 30%;
+  }
+  body main section #work, body main section #play, body main section #study, body main section #exercise, body main section #social, body main section #self-care {
+    margin: 0;
+    height: auto;
+  }
+  body main section #work div > :last-child, body main section #play div > :last-child, body main section #study div > :last-child, body main section #exercise div > :last-child, body main section #social div > :last-child, body main section #self-care div > :last-child {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

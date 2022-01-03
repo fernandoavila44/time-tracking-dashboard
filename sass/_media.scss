@@ -1,0 +1,98 @@
+@media (min-width: 641px) and (max-width: 1007px){
+   
+    h3{
+        font-size: 2.5rem;
+        margin-bottom: 0.6rem;
+    }
+    body{
+        main{
+            height: 100vh;
+            section{
+                display: grid;
+                gap: 1.5rem;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: auto;
+                grid-template-areas: "control control";
+                margin: 0;
+
+                #user-info{
+                    align-self: center;
+                    grid-area: control;
+                    margin: 0;
+                }
+
+                #work, #play, #study, #exercise, #social, #self-care{
+                    margin: 0;
+                    div{
+                        &>:last-child{
+                            flex-direction: column;
+                            align-items: flex-start;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+    
+}
+
+@media (min-width: 1008px){
+
+    h3{
+        font-size: 3rem;
+        margin-bottom: 0.6rem;
+    }
+    body{
+        main{
+            height: 100vh;
+            section{
+                display: grid;
+                gap: 1.5rem;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                grid-template-rows: auto auto;
+                grid-template-areas: "control" "control";
+                height: 55%;
+                margin: 0;
+
+                #user-info{
+                    grid-area: control;
+            
+                    & div{
+                        align-items: flex-start;
+                        flex-direction: column;
+                    }
+
+                    .avatar-text{
+                        padding: 1rem 1.5rem 3rem;
+                        height: 70%;
+                        img{
+                           width: 30%;
+                        }
+                        h1{
+                            font-size: 3rem;
+                        }
+                    }
+
+                    .timeframes{
+                        padding: 1rem 1.5rem;
+                        height: 30%;
+                    }
+                }
+
+                #work, #play, #study, #exercise, #social, #self-care{
+                    margin: 0;
+                    height: auto;
+                    
+                    div{
+                        &>:last-child{
+                            flex-direction: column;
+                            align-items: flex-start;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}

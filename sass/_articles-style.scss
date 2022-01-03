@@ -1,0 +1,118 @@
+#work{
+
+    @include color-activity($primary-light-red, url(../images/icon-work.svg));
+
+    &>div{
+        @include items-report-div;
+        &:hover{
+            @include transition-color;
+        }
+        div{
+        @include fix-divs;    
+       }
+        
+    }
+    
+}
+
+#play{
+
+    @include color-activity($primary-soft-blue, url(../images/icon-play.svg));
+
+    &>div{
+        @include items-report-div;
+        &:hover{
+            @include transition-color;
+        }
+        div{
+        @include fix-divs;    
+       }
+        
+    }
+    
+}
+
+#study{
+
+    @include color-activity($primary-slight-red, url(../images/icon-study.svg));
+
+    &>div{
+        @include items-report-div;
+        &:hover{
+            @include transition-color;
+        }
+        div{
+        @include fix-divs;    
+       }
+        
+    }
+    
+}
+
+#exercise{
+
+    @include color-activity($primary-lime-green, url(../images/icon-exercise.svg));
+
+    &>div{
+        @include items-report-div;
+        &:hover{
+            @include transition-color;
+        }
+        div{
+        @include fix-divs;    
+       }
+        
+    }
+    
+}
+
+#social{
+
+    @include color-activity($primary-violet, url(../images/icon-social.svg));
+
+    &>div{
+        @include items-report-div;
+        &:hover{
+            @include transition-color;
+        }
+        div{
+        @include fix-divs;    
+       }
+        
+    }
+    
+}
+
+#self-care{
+    
+    @include color-activity($primary-soft-orange, url(../images/icon-self-care.svg));
+
+    &>div{
+        @include items-report-div;
+        &:hover{
+            @include transition-color;
+        }
+        div{
+        @include fix-divs;    
+       }
+        
+    }
+    
+}
+
+#prueba{
+
+    @include color-activity($primary-soft-orange, url(../images/icon-self-care.svg));
+
+    &>div{
+        @include items-report-div;
+        &:hover{
+            @include transition-color;
+        }
+        div{
+        @include fix-divs;    
+       }
+        
+    }
+    
+}
