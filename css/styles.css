@@ -462,7 +462,7 @@ body main section #prueba > div div {
     margin-bottom: 0.6rem;
   }
   body main {
-    height: 100vh;
+    padding: 10% 0;
   }
   body main section {
     display: -ms-grid;
