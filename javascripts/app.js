@@ -1,5 +1,5 @@
 // Initial loading of the data.json file, when the site is opened for the first time, async function
-$.getJSON("../data.json", function (json) {
+$.getJSON("../../data.json", function (json) {
 
     // Array for analysis data from data.json ( is a javascript object) and update each activity
     for (let index = 0; index < json.length; index++) {
@@ -17,7 +17,7 @@ $.getJSON("../data.json", function (json) {
 });
 
 //The data.json file is stored in the variable dataJson.
-var dataJson = $.getJSON("../data.json", function () {
+var dataJson = $.getJSON("../../data.json", function () {
 
     dataJson = JSON.parse(dataJson.responseText);
 });
