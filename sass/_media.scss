@@ -39,6 +39,12 @@
 
 @media (min-width: 1008px){
 
+    .items-report{
+        img{
+            cursor: pointer;
+        }
+    }
+
     h3{
         font-size: 3rem;
         margin-bottom: 0.6rem;
@@ -77,6 +83,9 @@
                     .timeframes{
                         padding: 1rem 1.5rem;
                         height: 30%;
+                        a{
+                            cursor: pointer;
+                        }
                     }
                 }
 

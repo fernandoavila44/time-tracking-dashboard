@@ -26,13 +26,6 @@ p{
     font-size: 0.875rem;
 }
 
-
-.items-report{
-    img{
-        cursor: pointer;
-    }
-}
-
 body{
     font-family: 'Rubik', sans-serif;
 
@@ -85,7 +78,6 @@ body{
                     padding: 1rem 0;
                     a{
                         color: $neutral-desaturated-blue;
-                        cursor: pointer;
                         font-weight: 400;
                         text-decoration: none;
                         &:hover, &:active{

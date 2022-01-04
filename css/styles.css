@@ -24,10 +24,6 @@ p {
   font-size: 0.875rem;
 }
 
-.items-report img {
-  cursor: pointer;
-}
-
 body {
   font-family: 'Rubik', sans-serif;
 }
@@ -101,7 +97,6 @@ body main section #user-info .timeframes {
 
 body main section #user-info .timeframes a {
   color: #6f76c8;
-  cursor: pointer;
   font-weight: 400;
   text-decoration: none;
 }
@@ -500,6 +495,9 @@ body main section #prueba > div div {
 }
 
 @media (min-width: 1008px) {
+  .items-report img {
+    cursor: pointer;
+  }
   h3 {
     font-size: 3rem;
     margin-bottom: 0.6rem;
@@ -547,6 +545,9 @@ body main section #prueba > div div {
   body main section #user-info .timeframes {
     padding: 1rem 1.5rem;
     height: 30%;
+  }
+  body main section #user-info .timeframes a {
+    cursor: pointer;
   }
   body main section #work, body main section #play, body main section #study, body main section #exercise, body main section #social, body main section #self-care {
     margin: 0;
